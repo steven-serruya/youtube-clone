@@ -23,6 +23,8 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
           padding: "10px",
           margin: "5px",
           cursor: "pointer",
+          borderRadius: "25px", // Rounded borders
+
         }}
         key={category.name}
       >
