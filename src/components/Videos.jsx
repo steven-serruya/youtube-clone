@@ -1,9 +1,9 @@
-import React from 'react'
-import { Stack, Box } from '@mui/material'
-import { VideoCard, ChannelCard, Loader } from './index';
- 
+import React from "react";
+import { Stack, Box } from "@mui/material";
+
+import { ChannelCard, Loader, VideoCard } from "./";
+
 const Videos = ({ videos, direction }) => {
-  console.log(videos)
   if(!videos?.length) return <Loader />;
   
   return (
