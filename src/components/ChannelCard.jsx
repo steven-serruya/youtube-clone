@@ -1,31 +1,48 @@
 import React from 'react';
-import { Box, CardContent, CardMedia, Typography } from '@mui/material';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { Link } from 'react-router-dom';
+import { Card, CardContent, CardMedia, Typography } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { demoProfilePicture } from '../utils/constants';
 
 const ChannelCard = ({ channelDetail, marginTop }) => (
-  <Box
-    sx={{
-      boxShadow: 'none',
-      borderRadius: '20px',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: { xs: '356px', md: '320px' },
-      height: '326px',
+  <Card 
+    sx={{ 
+      width: { xs: '100%', sm: '358px', md: '320px' }, 
+      boxShadow: 'none', 
+      borderRadius: '20px', 
       margin: 'auto',
-      marginTop,
+      marginTop, 
+      height: '320px', // Match this height with VideoCard
+      display: 'flex', 
+      flexDirection: 'column', 
+      justifyContent: 'center', 
+      alignItems: 'center',
+      backgroundColor: '#1E1E1E', 
     }}
   >
     <Link to={`/channel/${channelDetail?.id?.channelId}`}>
-      <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center', color: '#fff' }}>
+      <CardContent 
+        sx={{ 
+          display: 'flex', 
+          flexDirection: 'column', 
+          justifyContent: 'center', 
+          alignItems: 'center', 
+          textAlign: 'center', 
+          color: '#fff',
+        }}
+      >
         <CardMedia
           image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
           alt={channelDetail?.snippet?.title}
-          sx={{ borderRadius: '50%', height: '180px', width: '180px', mb: 2, border: '1px solid #e3e3e3' }}
+          sx={{ 
+            borderRadius: '50%', 
+            height: '180px', 
+            width: '180px', 
+            mb: 2, 
+            border: '1px solid #e3e3e3' 
+          }}
         />
-        <Typography variant="h6">
+        <Typography variant="h6" noWrap>
           {channelDetail?.snippet?.title}{' '}
           <CheckCircleIcon sx={{ fontSize: '14px', color: 'gray', ml: '5px' }} />
         </Typography>
@@ -36,7 +53,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
         )}
       </CardContent>
     </Link>
-  </Box>
+  </Card>
 );
 
 export default ChannelCard;
