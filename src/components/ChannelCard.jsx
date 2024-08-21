@@ -29,6 +29,7 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
           alignItems: 'center', 
           textAlign: 'center', 
           color: '#fff',
+          minHeight: '106px' // Ensures all cards have a minimum height similar to VideoCard
         }}
       >
         <CardMedia
