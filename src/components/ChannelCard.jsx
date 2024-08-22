@@ -11,7 +11,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => (
       boxShadow: 'none',
       borderRadius: '20px',
       margin: 'auto', // Keep margin: 'auto' for centering
-      marginTop,
       height: '320px', // Match this height with VideoCard
       display: 'flex',
       flexDirection: 'column',

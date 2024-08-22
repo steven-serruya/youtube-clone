@@ -8,6 +8,8 @@ import {
   SearchFeed,
   VideoDetail,
 } from "./components";
+// In your App.js or any other component file
+import "./index.css"; // Adjust the path if your CSS file is in a different directory
 
 const App = () => (
   <BrowserRouter>

@@ -74,5 +74,30 @@ To get a local copy up and running, follow these simple steps:
 - Click on any video to watch it.
 - Browse related videos and channels in the sidebar.
 
-## Project Structure
+## Technologies
 
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for building responsive and visually appealing designs.
+- **React Router**: For navigation between different views.
+- **Axios**: For making HTTP requests to the API.
+- **RapidAPI**: For fetching video data from the YouTube API.
+
+## API Integration
+
+This project uses the YouTube Data API via RapidAPI to fetch video data, search results, and channel information.
+
+### Endpoints Used
+
+- **Search Videos**: To search for videos based on a query.
+- **Get Video Details**: To fetch details about a specific video.
+- **Get Related Videos**: To retrieve videos related to the one currently being viewed.
+- **Get Channel Details**: To get information about a YouTube channel.
+
+#### Screenshots
+
+![Homepage](<public/Screenshots/Screenshot 2024-08-20 at 6.11.30 PM.png>)
+![Sidebar](<public/Screenshots/Screenshot 2024-08-20 at 6.11.37 PM.png>)
+![Searchbar](<public/Screenshots/Screenshot 2024-08-20 at 6.11.46 PM.png>)
+![Video page and details](<public/Screenshots/Screenshot 2024-08-20 at 6.11.58 PM.png>)
+![Related Videos](<public/Screenshots/Screenshot 2024-08-20 at 6.12.06 PM.png>)
+![Channel detail page](<public/Screenshots/Screenshot 2024-08-22 at 11.00.41 AM.png>)

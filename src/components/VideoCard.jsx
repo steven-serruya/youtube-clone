@@ -12,7 +12,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
     boxShadow: "none", 
     borderRadius: '20px', 
     margin: 'auto', 
-    height: '100%', 
+    height: '320px', 
     display: 'flex', 
     flexDirection: 'column',
     justifyContent: 'space-between', 
