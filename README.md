@@ -14,11 +14,6 @@ A YouTube clone built with React, Material-UI, and RapidAPI. This project demons
 - [License](#license)
 - [Contact](#contact)
 
-## Demo
-
-Check out the live demo of the project [here](https://project-url).
-
-![YouTube Clone Screenshot](screenshot.png)
 
 ## Features
 
