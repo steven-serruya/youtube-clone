@@ -7,24 +7,25 @@ import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoCha
 
 const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
   <Card 
-    sx={{ 
-      width: { xs: '100%', sm: '358px', md: "320px" }, 
-      boxShadow: "none", 
-      borderRadius: '20px', 
-      margin: 'auto', 
-      height: '320px', // Ensure this matches ChannelCard height
-      display: 'flex', 
-      flexDirection: 'column', // Stack content vertically
-      justifyContent: 'space-between', // Space between media and content
-    }}
-  >
+  sx={{ 
+    width: { xs: '300px', sm: '320px', md: "320px" }, 
+    boxShadow: "none", 
+    borderRadius: '20px', 
+    margin: 'auto', 
+    height: '100%', 
+    display: 'flex', 
+    flexDirection: 'column',
+    justifyContent: 'space-between', 
+    marginBottom: '16px',  // Replace gap with margin for spacing between cards
+  }}
+>
     <Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY` }>
       <CardMedia 
         image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} 
         alt={snippet?.title} 
         sx={{ 
           width: '100%', 
-          height: 180 
+          height: '180px' 
         }} 
       />
     </Link>
@@ -32,7 +33,7 @@ const VideoCard = ({ video: { id: { videoId }, snippet } }) => (
       sx={{ 
         backgroundColor: "#1E1E1E", 
         flexGrow: 1, 
-        padding: '16px' 
+        padding: '20px' 
       }}>
       <Link to={videoId ? `/video/${videoId}` : demoVideoUrl } >
         <Typography variant="subtitle1" fontWeight="bold" color="#FFF" noWrap>
