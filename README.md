@@ -86,6 +86,24 @@ To get a local copy up and running, follow these simple steps:
 
 This project uses the YouTube Data API via RapidAPI to fetch video data, search results, and channel information.
 
+## API Key
+
+To use the YouTube Data API, you need to include your API key in the project. Follow these steps to set it up:
+
+1. **Create a `.env` file** in the root directory of the project if it doesn’t already exist.
+
+2. **Add your API key** to the `.env` file with the following line:
+    ```plaintext
+    REACT_APP_RAPIDAPI_KEY=your_rapidapi_key_here
+    ```
+
+   You can obtain the API key by signing up for a RapidAPI account and subscribing to the YouTube API plan. Make sure to replace `your_rapidapi_key_here` with the actual key you receive.
+
+3. **Restart the development server** after adding the API key to ensure the application can access it.
+
+This step is crucial for the application to fetch video data and function correctly.
+
+
 ### Endpoints Used
 
 - **Search Videos**: To search for videos based on a query.
