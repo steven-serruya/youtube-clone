@@ -44,24 +44,24 @@ To get a local copy up and running, follow these simple steps:
     ```
 
 3. **Install the dependencies:**
-    ```bash
+    
     npm install
-    ```
+    
 
 4. **Create a `.env` file in the root directory and add your API key:**
-    ```plaintext
+    
     REACT_APP_RAPIDAPI_KEY=your_rapidapi_key_here
-    ```
+    
 
 5. **Start the development server:**
-    ```bash
+    
     npm start
-    ```
+    
 
 6. **Open your browser and navigate to:**
-    ```
+    
     http://localhost:3000
-    ```
+    
 
 ## Usage
 
